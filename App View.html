@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Automania.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Link to CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--Box Icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        * { margin: 0; padding: 0;}
+
+        .banner {
+            position: relative;
+            width: 100%;
+            margin: 0;
+        }
+        .banner img{
+            width: 100%;
+        }
+        .banner h1 {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            font-size: 5rem;
+            padding-left: 60px;
+            color: #c2c0c2;
+            padding-top: 150px;
+        }
+    </style>
+</head>
+<body>
+    <!--Navbar-->
+    <header>
+        <!--Nav Container-->
+        <div class="nav container">
+            <!--Menu Icon-->
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <!--Logo-->
+            <a href="#home" class="logo">Automania</a>
+            <!--Nav List-->
+            <ul class = "navbar">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#vehicles">Vehicles <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown_menu">
+                        <ul>
+                            <li><a href="#sedan">Sedan</a></li>
+                            <li><a href="#hatchback">Hatchback</a></li>
+                            <li><a href="#suv">SUV</a></li>
+                            <li><a href="#sport">Sports Car</a></li>
+                        </ul>
+                    </div></li>
+                <li><a href="#about">About</a></li>    
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!--<div class="header-btn">
+                <a href="#" class="register">Register</a> 
+                <a href="#" class="login">Login</a>
+            </div>-->
+            
+            <!--Login-->
+            <br><a href="log-form.html" class="btn">LOGIN</a> 
+        </div>
+        </div>
+    </header>
+
+    <!--Home-->
+    <section class="home" id="home">
+        <div class="banner">
+            <img src="main_bground.jpg" alt="img">
+            <h1>Even Jesus would rent</h1>
+        </div>
+        <!--<div class="home-text">
+            <h1>Even Jesus would rent</h1>-->
+            <!--Home Button-->
+            <!-- <p></p>
+            <a href="#" class="btn">Discover Now</a> -->
+            
+        </div>
+    </section>
+
+    
+    <!--Ride Section-->
+    <section class="ride" id="ride">
+        <div class="heading">
+            <span>How It Works</span>
+            <h1>Rent With 3 Steps</h1>
+        </div>
+        <div class="ride-container">
+            <div class="box">
+                <i class='bx bxs-map'></i>
+                <h2>Choose A Location</h2>
+                <p>You choose the location where you want to rent a car.</p>
+            </div>
+
+            <div class="box">
+                <i class='bx bxs-calendar-check' ></i>
+                <h2>Pick-Up Date</h2>
+                <p>You pick up the date you want to rent a car in the location you are in.</p>
+            </div>
+
+            <div class="box">
+                <i class='bx bxs-calendar-star'></i>
+                <h2>Book A Car</h2>
+                <p>Finally you rent which car do you think is perfect for you.</p>
+            </div>
+        </div>
+    </section>
+    <!--Car Section-->
+    <section class="vehicles" id="vehicles">
+        <div class="heading">
+            <h2>We have all types of Vehicles</h2>
+        </div>
+            
+            <!--Sedan-->
+
+            <section class="sedan" id="sedan">
+                <div class="heading">
+                    <h3>Sedan Cars</h3>
+                </div>
+                <div class="sedan-container">
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="Sedan\3_front.png" alt="">
+                        </div>
+                        <p>2017</p>
+                        <h3>BMW 3-Series</h3>
+                        <h2>$180 <span>/day</span></h2>
+                        <br><a href="3-Series.html" class="btn">Rent Now</a>    
+                    </div>
+
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="Sedan\A_front.png" alt="">
+                        </div>
+                        <p>2022</p>
+                        <h3>Mercedes-Benz A-Class</h3>
+                        <h2>$250 <span>/day</span></h2>
+                        <br><a href="A-Class.html" class="btn">Rent Now</a>    
+                    </div>
+
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="Sedan\A4_front.png" alt="">
+                        </div>
+                        <p>2018</p>
+                        <h3>Audi A4</h3>
+                        <h2>$190 <span>/day</span></h2>
+                        <br><a href="A4.html" class="btn">Rent Now</a>    
+                    </div>
+
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="Sedan\Accord_front.png" alt="">
+                        </div>
+                        <p>2009</p>
+                        <h3>Honda Accord</h3>
+                        <h2>$100 <span>/day</span></h2>
+                        <br><a href="Accord.html" class="btn">Rent Now</a>    
+                    </div>
+
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="Sedan\Altima_front.png" alt="">
+                        </div>
+                        <p>2020</p>
+                        <h3>Nissan Altima</h3>
+                        <h2>$180 <span>/day</span></h2>
+                        <br><a href="Altima.html" class="btn">Rent Now</a>    
+                    </div>
+                </div>
+            </section>
+
+            <!--Hatchback-->
+
+            <section class="hatchback" id="hatchback">
+                <div class="heading">
+                    <h3>Hatchback Cars</h3>
+                </div>
+                <div class="h-container">
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="Hatchback\golf_front.png" alt="">
+                        </div>
+                        <p>2009</p>
+                        <h3>Volkswagen Golf</h3>
+                        <h2>$120 <span>/day</span></h2>
+                        <br><a href="Golf.html" class="btn">Rent Now</a>    
+                    </div>
+
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="Hatchback\peugeot_front.png" alt="">
+                        </div>
+                        <p>2021</p>
+                        <h3>Peugeot 308</h3>
+                        <h2>$200 <span>/day</span></h2>
+                        <br><a href="Peugeot.html" class="btn">Rent Now</a>    
+                    </div>
+
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="Hatchback\ford_front.png" alt="">
+                        </div>
+                        <p>2016</p>
+                        <h3>Ford Focus-RS</h3>
+                        <h2>$180 <span>/day</span></h2>
+                        <br><a href="Ford.html" class="btn">Rent Now</a>    
+                    </div>
+
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="Hatchback\volvo_front.png" alt="">
+                        </div>
+                        <p>2019</p>
+                        <h3>Volvo V60</h3>
+                        <h2>$200 <span>/day</span></h2>
+                        <br><a href="Volvo.html" class="btn">Rent Now</a>    
+                    </div>
+
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="Hatchback\rs3_front.png" alt="">
+                        </div>
+                        <p>2022</p>
+                        <h3>Audi RS3</h3>
+                        <h2>$230 <span>/day</span></h2>
+                        <br><a href="rs3.html" class="btn">Rent Now</a>    
+                    </div>
+                </div>
+            </section>
+
+            <!--SUV-->
+
+            <section class="suv" id="suv">
+                <div class="heading">
+                    <h3>SUV Cars</h3>
+                </div>
+                <div class="suv-container">
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="SUV\Audi Q5\q5_front.png" alt="">
+                        </div>
+                        <p>2018</p>
+                        <h3>Audi Q5</h3>
+                        <h2>$180 <span>/day</span></h2>
+                        <br><a href="Q5.html" class="btn">Rent Now</a>    
+                    </div>
+
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="SUV\GLC\glc_front.png" alt="">
+                        </div>
+                        <p>2018</p>
+                        <h3>Mercedes-Benz GLC</h3>
+                        <h2>$190 <span>/day</span></h2>
+                        <br><a href="GLC.html" class="btn">Rent Now</a>    
+                    </div>
+
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="SUV\Honda\crv_front.png" alt="">
+                        </div>
+                        <p>2015</p>
+                        <h3>Honda CR-V</h3>
+                        <h2>$150 <span>/day</span></h2>
+                        <br><a href="CRV.html" class="btn">Rent Now</a>    
+                    </div>
+
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="SUV\Ioniq 5\iq_front.png" alt="">
+                        </div>
+                        <p>2021</p>
+                        <h3>Hyundai Ioniq-5</h3>
+                        <h2>$250 <span>/day</span></h2>
+                        <br><a href="IQ.html" class="btn">Rent Now</a>    
+                    </div>
+
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="SUV\Mazda\cx5_front.png" alt="">
+                        </div>
+                        <p>2020</p>
+                        <h3>Mazda CX-5</h3>
+                        <h2>$180 <span>/day</span></h2>
+                        <br><a href="CX5.html" class="btn">Rent Now</a>    
+                    </div>
+                </div>
+            </section>
+
+            <!--Sports car-->
+
+            <section class="sport" id="sport">
+                <div class="heading">
+                    <h3>Sports Cars</h3>
+                </div>
+                <div class="sp-container">
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="Supercar\Alfa\alfa_front.png" alt="">
+                        </div>
+                        <p>2020</p>
+                        <h3>Alfa Romeo Giulia</h3>
+                        <h2>$350 <span>/day</span></h2>
+                        <br><a href="Alfa.html" class="btn">Rent Now</a>    
+                    </div>
+
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="Supercar\Corvette\corv_front.png" alt="">
+                        </div>
+                        <p>2020</p>
+                        <h3>Chevrolet Corvette</h3>
+                        <h2>$450 <span>/day</span></h2>
+                        <br><a href="Corvette.html" class="btn">Rent Now</a>    
+                    </div>
+
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="Supercar\Mustang\must_front.png" alt="">
+                        </div>
+                        <p>2016</p>
+                        <h3>Ford Mustang</h3>
+                        <h2>$350 <span>/day</span></h2>
+                        <br><a href="Mustang.html" class="btn">Rent Now</a>    
+                    </div>
+
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="Supercar\Nissan\gtr_front.png" alt="">
+                        </div>
+                        <p>2018</p>
+                        <h3>Nissan GT-R</h3>
+                        <h2>$400 <span>/day</span></h2>
+                        <br><a href="GTR.html" class="btn">Rent Now</a>    
+                    </div>
+
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="Supercar\SL\sl_front.png" alt="">
+                        </div>
+                        <p>2022</p>
+                        <h3>Mercedes SL</h3>
+                        <h2>$550 <span>/day</span></h2>
+                        <br><a href="SL.html" class="btn">Rent Now</a>    
+                    </div>
+                </div>
+            </section>
+    </section>
+
+    <!--About-->
+
+    <section class="about" id="about">
+        <div class="heading">
+            <span>About Us</span>
+            <h1>Best Customer Experience</h1>
+        </div>
+        <div class="about-container">
+            <div class="about-img">
+                <img src="ab_img.png" alt="">
+            </div>
+            <div class="about-text">
+                <span>About Us</span>
+                <p>At Automania, we pride ourselves on providing our customers with a wide selection of high-quality vehicles at competitive prices. Our knowledgeable and experienced sales team is dedicated to helping you find the perfect sedan, hatchback, SUV, or Sports Car to suit your needs and budget. We understand that buying a car can be a stressful experience, which is why we go out of our way to make the process as smooth and easy as possible.</p>
+                <p>We are committed to providing the best possible customer service, whether you're looking to buy a car or need help with maintenance or repairs. We invite you to come visit us at Automania, where you can expect a friendly and welcoming environment, and a team of professionals who are dedicated to making your car buying experience a success.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact-->
+
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h1>Contact Us</h1>
+            <br><br>
+            <p>Tel: +40(754)(697)(894)</p>
+            <br>
+            <p>e-mail: automania2023@gmail.com</p>
+            <br><br>
+        </div>
+    </section>
+
+    <!--Link to Js-->
+    <script src="main.js"></script>
+    <script>
+       const form = document.getElementById("form-container");
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const location = document.getElementById("location").value;
+    const pickupDate = document.getElementById("pickupDate").value;
+    const returnDate = document.getElementById("returnDate").value;
+    // store the data in localStorage
+    localStorage.setItem("location", location);
+    localStorage.setItem("pickupDate", pickupDate);
+    localStorage.setItem("returnDate", returnDate);
+    // redirect to the next page
+    window.location.href = "Golf.html";
+});
+
+const location = localStorage.getItem("location");
+    const pickupDate = localStorage.getItem("pickupDate");
+    const returnDate = localStorage.getItem("returnDate");
+    document.getElementById("location").innerHTML = location;
+    document.getElementById("pickupDate").innerHTML = pickupDate;
+    document.getElementById("returnDate").innerHTML = returnDate;
+   </script>
+    
+</body>
+</html>
