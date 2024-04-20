@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Automania.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Link to CSS-->
+    <link rel="stylesheet" href="Succes.css">
+    <!--Box Icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <style>
+        * { margin: 0; padding: 0;}
+    </style>
+</head>
+<body>
+    <!--Navbar-->
+    <header>
+        <!--Nav Container-->
+        <div class="nav container">
+            <!--Menu Icon-->
+            <i class='bx bx-menu' id="menu-icon"></i>
+             <!--Logo-->
+             <a href="App%20View.html#home" class="logo">Automania</a>
+            <!--Nav List-->
+            <ul class = "navbar">
+                <li><a href="App View.html" class="active">Home</a></li>
+                <li><a href="App%20View.html#vehicles">Vehicles <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown_menu">
+                        <ul>
+                            <li><a href="App%20View.html#sedan">Sedan</a></li>
+                            <li><a href="App%20View.html#hatchback">Hatchback</a></li>
+                            <li><a href="App%20View.html#suv">SUV</a></li>
+                            <li><a href="App%20View.html#sport">Sports Car</a></li>
+                        </ul>
+                    </div></li>
+                <li><a href="App%20View.html#about">About</a></li>    
+                <li><a href="App%20View.html#contact">Contact</a></li>
+            </ul>
+            <!--<div class="header-btn">
+                <a href="#" class="register">Register</a> 
+                <a href="#" class="login">Login</a>
+            </div>-->
+        </div>
+    </header>
+
+    <div class="center-container">
+        <div class="box">
+            <form action="login_succes.html" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+    
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+    
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Registration Prompt and Button -->
+    <div class="register-prompt">
+        <p>Don't have an account?</p>
+        <button onclick="location.href='reg-form.html'">Register</button>
+    </div>
+
+    <style>
+     .center-container .box {
+    background-color: #f2f2f2; /* Light grey background */
+    padding: 20px; /* Padding around the content */
+    border-radius: 0.7rem; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 400px; /* Fixed width */
+    height: 250px;
+    margin-top: 200px; /* Center the box */
+}
+
+.box form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+.box label {
+    margin-top: 10px; /* Space above each label */
+    margin-bottom: 5px; /* Space below each label */
+    color: #333; /* Dark grey color for labels */
+    font-size: 16px; /* Font size for labels */
+    font-weight: 600;
+}
+
+.box input[type="text"],
+.box input[type="password"] {
+    padding: 8px; /* Padding inside input fields */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 4px; /* Rounded corners for inputs */
+    font-size: 14px; /* Font size for input text */
+}
+
+.box button {
+    background-color: #000000; /* Green background color */
+    color: white; /* White text */
+    padding: 10px; /* Padding inside the button */
+    border: none; /* No border */
+    border-radius: 0.7rem; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 20px; /* Space above the button */
+    font-size: 16px; /* Font size for button text */
+}
+
+.box button:hover {
+    background-color: #423f42; /* Slightly darker green on hover */
+}
+
+.register-prompt {
+    text-align: center; /* Center align text */
+    margin-top: 20px; /* Space above the prompt */
+}
+
+.register-prompt p {
+    color: #333; /* Dark grey color for text */
+    font-size: 16px; /* Font size for text */
+}
+
+.register-prompt button {
+    background-color: #000000; /* Different color for distinction */
+    color: white; /* White text */
+    padding: 10px; /* Padding inside the button */
+    border: none; /* No border */
+    border-radius: 0.7rem; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 10px; /* Space above the button */
+    font-size: 16px; /* Font size for button text */
+}
+
+.register-prompt button:hover {
+    background-color: #423f42; /* Slightly darker shade on hover */
+}
+
+    </style>
+    
+</body>
+</html>

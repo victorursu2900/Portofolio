@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Automania.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Link to CSS-->
+    <link rel="stylesheet" href="Succes.css">
+    <!--Box Icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <style>
+        * { margin: 0; padding: 0;}
+    </style>
+</head>
+<body>
+    <!--Navbar-->
+    <header>
+        <!--Nav Container-->
+        <div class="nav container">
+            <!--Menu Icon-->
+            <i class='bx bx-menu' id="menu-icon"></i>
+             <!--Logo-->
+             <a href="App%20View.html#home" class="logo">Automania</a>
+            <!--Nav List-->
+            <ul class = "navbar">
+                <li><a href="App View.html" class="active">Home</a></li>
+                <li><a href="App%20View.html#vehicles">Vehicles <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown_menu">
+                        <ul>
+                            <li><a href="App%20View.html#sedan">Sedan</a></li>
+                            <li><a href="App%20View.html#hatchback">Hatchback</a></li>
+                            <li><a href="App%20View.html#suv">SUV</a></li>
+                            <li><a href="App%20View.html#sport">Sports Car</a></li>
+                        </ul>
+                    </div></li>
+                <li><a href="App%20View.html#about">About</a></li>    
+                <li><a href="App%20View.html#contact">Contact</a></li>
+            </ul>
+            <!--<div class="header-btn">
+                <a href="#" class="register">Register</a> 
+                <a href="#" class="login">Login</a>
+            </div>-->
+        </div>
+    </header>
+
+    <section class="end">
+        <div class="center-container">
+            <div class="box">
+                <i class='bx bxs-check-circle'></i><br><br>
+                <p>Register succesful!</p>
+                <div class="home-prompt">
+                    <button onclick="location.href='App%20View.html'">HOME</button>
+                </div>
+            </div>    
+        </div>
+        
+    </section>
+
+    <style>
+
+        .home-prompt button {
+            display: block;
+            width: 100px;
+            background-color: #000000; /* Different color for distinction */
+            color: white;
+            padding: 14px 20px;
+            margin: 50px auto;
+            border: none;
+            border-radius: 0.7rem;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .home-prompt button:hover {
+            background-color: #423f42; /* Darker shade on hover */
+        }
+
+    </style>
+    
+</body>
+</html>

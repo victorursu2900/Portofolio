@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Automania.com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Link to CSS-->
+    <link rel="stylesheet" href="car.css">
+    <!--Box Icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <style>
+        * { margin: 0; padding: 0;}
+    </style>
+</head>
+<body>
+    <!--Navbar-->
+    <header>
+        <!--Nav Container-->
+        <div class="nav container">
+            <!--Menu Icon-->
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <!--Logo-->
+            <a href="App%20View.html#home" class="logo">Automania</a>
+            <!--Nav List-->
+            <ul class = "navbar">
+                <li><a href="App View.html" class="active">Home</a></li>
+                <li><a href="App%20View.html#vehicles">Vehicles <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown_menu">
+                        <ul>
+                            <li><a href="App%20View.html#sedan">Sedan</a></li>
+                            <li><a href="App%20View.html#hatchback">Hatchback</a></li>
+                            <li><a href="App%20View.html#suv">SUV</a></li>
+                            <li><a href="App%20View.html#sport">Sports Car</a></li>
+                        </ul>
+                    </div></li>
+                <li><a href="App%20View.html#about">About</a></li>    
+                <li><a href="App%20View.html#contact">Contact</a></li>
+            </ul>
+            <!--<div class="header-btn">
+                <a href="#" class="register">Register</a> 
+                <a href="#" class="login">Login</a>
+            </div>-->
+        </div>
+    </header>
+    <br><br><br><br>
+    <section class="car">
+    <div class="car-container">
+        <div class="box">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+      <!-- Slides -->
+                    <div class="swiper-slide"><img src="Hatchback\rs3_front.png"></div>
+                    <div class="swiper-slide"><img src="Hatchback\rs3_back.png"></div>
+                    <div class="swiper-slide"><img src="Hatchback\rs3_int.png"></div>
+      
+                </div>
+    <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+  
+            </div>
+            <p>2022</p>
+            <h3>Audi RS3</h3>
+            <h2>$230 <span>/day</span></h2>
+            <h4>Type: Hatchback</h4><br>
+            <h5>Engine: Petrol</h5><br>
+            <h6>Gearbox: Manual</h6><br>
+            <h1>Traction: All-Wheel</h1>
+            <div class="ab-box">
+                <p><br>The 2022 Audi RS3 is a high-performance compact luxury sedan that boasts a powerful 2.5-liter 5-cylinder engine that produces 400 horsepower and 354 lb-ft of torque.<br><br>It features a 7-speed S tronic dual-clutch transmission and quattro all-wheel drive.<br><br>The exterior is sleek and sporty, with a bold front grille and diffuser, large air inlets, and a rear spoiler.<br><br></p>
+            </div><br>
+            <a href="info.html" onclick="setDailyRate(), setCarAndRedirect()" class="btn">Rent Now</a>
+        </div> 
+    </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        });
+
+        var dailyRate = 230; // Daily rate for this car
+
+        function setDailyRate() {
+            localStorage.setItem('dailyRate', dailyRate); // Store daily rate in local storage
+            localStorage.setItem('selectedCar', 'Audi RS3'); // Set the selected car
+            window.location.href = 'Info.html'; // Redirect to Info.html
+        }
+
+    </script>
+    <!--<script src="main.js"></script>-->
+</body>
