@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      href="https://fontawesome.com/"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>Register | NOMAD.com</title>
+</head>
+<body>
+    <nav>
+        <div class="nav__bar">
+          <div class="nav__header">
+            <div class="logo nav__logo">
+                <div><a href="home.html">N</a></div>
+                <span><a href="home.html">NOMAD.com</a></span>
+            </div>
+            <div class="nav__menu__btn" id="menu-btn">
+              <i class="ri-menu-line"></i>
+            </div>
+          </div>
+          <ul class="nav__links" id="nav-links">
+            <li><a href="#room">Destinations</a></li>
+            <li><a href="description.html">How it works?</a></li>
+            <li><a href="home.html#feature">Feature</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="home.html#about">About</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="header-register">
+        <h1>Join NOMAD.com</h1>
+      </div>
+      <div class="register-container">
+        <div class="form-container">
+          <form id="register-form">
+            <input type="text" id="first-name" placeholder="First Name" required>
+            <input type="text" id="last-name" placeholder="Last Name" required>
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="email" id="email" placeholder="Email Address" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <input type="password" id="confirm-password" placeholder="Confirm Password" required>            
+            <button type="submit">Sign Up</button>
+          </form>
+          <p>Already a member? <a href="login.html">LOGIN</a></p>
+        </div>
+      
+        <div class="subscription-plans">
+          <h2>Choose Your Subscription Plan</h2>
+          <div class="plans-container"> 
+            <div class="plan free-plan">
+              <h3>Free Trial</h3>
+              <p class="price">21 days free</p>
+              <button class="select-plan" data-plan="Free Trial">Select Plan</button>
+            </div>
+        
+            <div class="plan basic-plan">
+              <h3>1 Year</h3>
+              <p class="price">60.00 EUR</p>
+              <button class="select-plan" data-plan="1 Year">Select Plan</button>
+            </div>
+        
+            <div class="plan premium-plan">
+              <h3>2 Year</h3>
+              <p class="price">100.00 EUR</p>
+              <button class="select-plan" data-plan="2 Year">Select Plan</button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+
+      <footer class="footer">
+        <div class="section__container footer__container">
+          <div class="footer__col">
+            <div class="logo footer__logo">
+              <div><a href="home.html">N</a></div>
+              <span><a href="home.html">NOMAD.com</a></span>
+            </div>
+            <p class="section__description">
+              The best place for you to exchange homes.
+            </p>
+            <ul class="footer__socials">
+              <li>
+                <a href="#"><i class="ri-youtube-fill"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ri-instagram-line"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ri-facebook-fill"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ri-linkedin-fill"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Contact Information</h4>
+            <div class="footer__links">
+              <li><a href="#">Europe</a></li>
+              <li><a href="#">North America</a></li>
+              <li><a href="#">South America</a></li>
+              <li><a href="#">Asia</a></li>
+              <li><a href="#">Africa</a></li>
+              <li><a href="#">Oceania</a></li>
+            </div>
+          </div>
+          <div class="footer__col">
+            <h4>Services</h4>
+            <div class="footer__links">
+              <li><a href="home.html#home">Start Page</a></li>
+              <li><a href="#">Listings</a></li>
+              <li><a href="#">What is Home Exchange?</a></li>
+              <li><a href="home.html#about">About NOMAD.com</a></li>
+              <li><a href="#">Web Feedback</a></li>
+              <li><a href="register.html">Sign up with NOMAD.com</a></li>
+            </div>
+          </div>
+          <div class="footer__col">
+            <h4>Contact Us</h4>
+            <div class="footer__links">
+              <li>
+                <span><i class="ri-phone-fill"></i></span>
+                <div>
+                  <h5>Phone Number</h5>
+                  <p>+40 749046140</p>
+                </div>
+              </li>
+              <li>
+                <span><i class="ri-record-mail-line"></i></span>
+                <div>
+                  <h5>Email</h5>
+                  <p>info@nomad.com</p>
+                </div>
+              </li>
+              <li>
+                <span><i class="ri-map-pin-2-fill"></i></span>
+                <div>
+                  <h5>Location</h5>
+                    <p>First in <a href="https://en.wikipedia.org/wiki/Timi%C8%99oara" target="_blank">Timișoara, Romania</a></p>
+                </div>
+              </li>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bar">
+          Copyright © 2024 NOMAD.com. All rights reserved.
+        </div>
+    </footer>
+
+    <script src=".js\main.js"></script>
+    <script src=".js\register.js"></script>
+</body>
+</html>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      const registerForm = document.getElementById('register-form');
+      
+      registerForm.addEventListener('submit', function(event) {
+        const password = document.getElementById('password').value;
+        const confirmPassword = document.getElementById('confirm-password').value;
+        
+        // Check if passwords match
+        if(password !== confirmPassword) {
+          // Prevent the form from being submitted
+          event.preventDefault();
+          // Inform the user that the passwords do not match
+          alert("Passwords do not match.");
+        }
+        // If passwords match, the form will be submitted
+      });
+    });
+    </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const planButtons = document.querySelectorAll('.select-plan');
+    const planInput = document.createElement('input');
+    planInput.type = 'hidden';
+    planInput.name = 'selectedPlan';
+    document.getElementById('register-form').appendChild(planInput);
+    
+    planButtons.forEach(button => {
+      button.addEventListener('click', (e) => {
+        planButtons.forEach(btn => btn.parentElement.classList.remove('active'));
+        e.target.parentElement.classList.add('active');
+        planInput.value = e.target.getAttribute('data-plan');
+      });
+    });
+  });
+  </script>
+  
+    
